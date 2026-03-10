@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Saku Digital: Technopreneurship IT & Layanan Jaringan (TKJ)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            text-align: center;
+            font-weight: bold;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+        h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .section-box {
+            background: #f9fbff;
+            border-left: 5px solid #3498db;
+            padding: 25px;
+            margin-bottom: 35px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+            border-radius: 4px;
+        }
+        .info-box {
+            background: #d1ecf1;
+            border-left: 5px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            color: #0c5460;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            background-color: #fff;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        .excel-code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e8f8f5;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #16a085;
+            font-weight: bold;
+            border: 1px solid #c8e6c9;
+        }
+        .dialogue-box {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+        }
+        .dialogue-speaker {
+            font-weight: bold;
+            color: #2c3e50;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .dialogue-action {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .spk-container {
+            border: 2px solid #333;
+            padding: 40px 50px;
+            background-color: #fff;
+            margin-top: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+        }
+        .spk-title {
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 5px;
+            font-size: 1.4em;
+        }
+        .spk-subtitle {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .signature-table {
+            width: 100%;
+            border: none;
+            margin-top: 50px;
+            background: transparent;
+        }
+        .signature-table td, .signature-table th {
+            border: none;
+            text-align: center;
+            width: 50%;
+            vertical-align: bottom;
+            padding-top: 80px;
+            background: transparent;
+        }
+        .template-placeholder {
+            color: #e67e22;
+            font-style: italic;
+        }
+        ul, ol {
+            margin-top: 8px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Buku Saku Digital: Technopreneurship IT</h1>
+    <div class="subtitle">Materi Komprehensif Produk Kreatif dan Kewirausahaan (TKJ / Jaringan)</div>
+
+    <div class="section-box">
+        <h2>BAB I: Analisis Usaha & Anatomi Proposal Bisnis IT</h2>
+        
+        <h3>A. Memahami Analisis SWOT dalam Bisnis Jasa Jaringan</h3>
+        <p>Sebelum memulai atau menawarkan usaha layanan jaringan kepada klien, seorang Technopreneur wajib mengevaluasi posisi bisnisnya menggunakan metode SWOT:</p>
+        <ul>
+            <li><strong>Strengths (Kekuatan):</strong> Keunggulan internal bisnis Anda. (Contoh: Teknisi memiliki sertifikasi MikroTik MTCNA, respon perbaikan 1x24 jam, pengerjaan kabel sangat rapi).</li>
+            <li><strong>Weaknesses (Kelemahan):</strong> Kekurangan internal bisnis Anda. (Contoh: Alat kerja seperti Splicer Fiber Optic masih menyewa, modal untuk pemasaran terbatas).</li>
+            <li><strong>Opportunities (Peluang):</strong> Faktor eksternal yang menguntungkan bisnis. (Contoh: Tren Work From Home, banyak UMKM dan kafe baru yang membutuhkan WiFi stabil untuk pelanggan).</li>
+            <li><strong>Threats (Ancaman):</strong> Faktor eksternal yang merugikan. (Contoh: Persaingan dengan freelance yang sering membanting harga pasaran, atau klien yang sulit membayar tepat waktu).</li>
+        </ul>
+
+        <h3>B. Anatomi Proposal Bisnis IT yang "Menjual"</h3>
+        <p>Dalam bisnis B2B (Business to Business), klien tidak sekadar membeli jasa; mereka membeli solusi atas masalah mereka. Proposal yang profesional harus memuat struktur berikut:</p>
+        <ul>
+            <li><strong>Ringkasan Eksekutif (Executive Summary):</strong> Rangkuman singkat di halaman pertama yang langsung menembak masalah klien dan solusi apa yang Anda tawarkan. Jika ini membosankan, klien tidak akan membaca halaman berikutnya.</li>
+            <li><strong>Profil & Kompetensi Inti:</strong> Jangan sekadar menulis "Kami ahli komputer". Tuliskan spesialisasi teknis, misalnya: "Spesialis instalasi jaringan kantor dan manajemen bandwidth."</li>
+            <li><strong>Model Pendapatan (Revenue Stream):</strong> Jelaskan apakah ini proyek putus (dibayar sekali) atau ada kontrak pemeliharaan (maintenance) bulanan yang menjadi pendapatan pasif.</li>
+            <li><strong>Termin Pembayaran (Term of Payment):</strong> Aturan wajib Technopreneur: Lindungi bisnis dari kerugian. Selalu terapkan Down Payment (DP) minimal 50% di awal untuk belanja material.</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB II: Template Dokumen Proposal Penawaran</h2>
+        <p><em>Instruksi: Gunakan format lengkap di bawah ini untuk menyusun dokumen proposal penawaran kepada klien. Ganti semua teks di dalam kurung siku dengan data riil usaha Anda.</em></p>
+        <hr>
+        
+        <h3 style="text-align: center;">PROPOSAL PENAWARAN JASA LAYANAN JARINGAN & IT<br><span class="template-placeholder">[Nama Usaha Anda, misal: NetPro Solutions]</span></h3>
+        <p style="text-align: center;"><strong>Disusun Oleh:</strong> <span class="template-placeholder">[Nama Lengkap Anda / Tim]</span><br><strong>Kontak / WA:</strong> <span class="template-placeholder">[Nomor Telepon]</span> | <strong>Email:</strong> <span class="template-placeholder">[Email Bisnis]</span></p>
+        <br>
+        
+        <h4>BAB I: PENDAHULUAN</h4>
+        <p><strong>1. Latar Belakang Masalah:</strong><br><span class="template-placeholder">[Jelaskan secara empatik masalah yang sedang dihadapi oleh tempat usaha klien. Contoh: "Di era digital saat ini, konektivitas internet adalah kunci kenyamanan pelanggan kafe. Namun, seringkali kecepatan internet yang tidak dibagi rata menyebabkan ketidaknyamanan bagi pengunjung VIP..."]</span></p>
+        <p><strong>2. Visi dan Misi Usaha Kami:</strong><br><span class="template-placeholder">[Tuliskan visi Anda. Contoh: "Menjadi mitra IT terpercaya bagi UMKM untuk mendigitalisasi operasional bisnis mereka melalui infrastruktur jaringan yang handal dan rapi."]</span></p>
+        
+        <h4>BAB II: PROFIL PERUSAHAAN</h4>
+        <ul>
+            <li><strong>Nama Usaha:</strong> <span class="template-placeholder">[Nama Bisnis Anda]</span></li>
+            <li><strong>Struktur Tim:</strong> <span class="template-placeholder">[Sebutkan pimpinan proyek, teknisi instalasi, dan staf administrasi]</span></li>
+        </ul>
+
+        <h4>BAB III: PRODUK DAN LAYANAN SOLUSI</h4>
+        <p>Berdasarkan analisis masalah di lokasi Bapak/Ibu, kami menawarkan solusi teknis berikut:</p>
+        <ol>
+            <li><span class="template-placeholder">[Contoh: Ekspansi jangkauan sinyal dengan penambahan 2 Access Point UniFi di lantai 2.]</span></li>
+            <li><span class="template-placeholder">[Contoh: Konfigurasi manajemen bandwidth menggunakan Router MikroTik untuk memisahkan kecepatan pengunjung biasa dan staf.]</span></li>
+            <li><span class="template-placeholder">[Contoh: Cable Management: Penataan ulang kabel LAN menggunakan pipa pelindung PVC agar rapi, aman dari gigitan tikus, dan tidak membahayakan pengunjung.]</span></li>
+        </ol>
+
+        <h4>BAB IV: ANALISIS PASAR & SWOT</h4>
+        <p><strong>Target Pasar Penawaran:</strong> <span class="template-placeholder">[Sebutkan target klien, contoh: Sektor Food & Beverage, Perkantoran skala kecil, Sekolah]</span></p>
+        <p><strong>Analisis SWOT Vendor:</strong> <span class="template-placeholder">[Jabarkan Kekuatan, Kelemahan, Peluang, dan Ancaman usaha Anda secara jujur sebagai acuan kompetensi]</span></p>
+
+        <h4>BAB V: RENCANA ANGGARAN BIAYA (RAB)</h4>
+        <p><em>(Rincian RAB secara detail disajikan pada tabel terlampir di lembar terpisah, memuat Harga Pokok Material, Biaya Operasional, dan Total Penawaran Akhir).</em></p>
+        <hr>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB III: Studi Kasus Praktik (Proyek "Kopi Senja")</h2>
+        <p><strong>Judul Kasus: Pembenahan Infrastruktur Jaringan Kopi Senja & Co-working Space</strong></p>
+        
+        <p><strong>Latar Belakang Situasi:</strong><br>
+        Sebuah kafe baru bernama "Kopi Senja" berlantai dua baru saja beroperasi selama satu bulan. Lantai 1 berfungsi sebagai area kafe biasa, sedangkan Lantai 2 dikhususkan sebagai area co-working space berbayar untuk freelancer dan mahasiswa. Pemilik kafe, Pak Budi, berlangganan internet ISP dengan kecepatan 100 Mbps. Namun, ia mendapat 3 keluhan utama dari pelanggan dan stafnya:</p>
+        <ol>
+            <li><strong>Sinyal Lemah (Blank Spot):</strong> WiFi dari router bawaan ISP yang terletak di kasir lantai 1 tidak mampu menembus cor dak beton, sehingga lantai 2 sering kehilangan sinyal.</li>
+            <li><strong>Koneksi Lambat saat Ramai (Bandwidth Bocor):</strong> Pengunjung di lantai 1 yang hanya nongkrong sambil memesan es teh sering mengunduh file besar atau streaming resolusi tinggi. Akibatnya, pengunjung VIP di co-working space lantai 2 yang sedang meeting Zoom mengalami internet putus-putus (lagging).</li>
+            <li><strong>Kabel Berantakan (Hazard):</strong> Tarikan kabel LAN sementara dari router ke mesin kasir (Point of Sale) melintang di lantai tanpa pelindung, sangat berisiko membuat pelayan tersandung dan terlihat tidak estetik bagi pelanggan.</li>
+        </ol>
+        
+        <div class="warning-box">
+            <strong>Tugas Pemecahan Kasus (Project-Based Learning):</strong><br>
+            Posisikan diri Anda beserta kelompok sebagai penyedia Jasa Layanan IT Profesional. Pak Budi memanggil Anda untuk mempresentasikan solusi atas masalah kafenya. Berdasarkan kondisi di atas, susunlah Proposal Bisnis (menggunakan template Bab II) dan siapkan Presentasi Pitch Deck beserta Rencana Anggaran Biayanya.
+        </div>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB IV: Rubrik Penilaian Proyek (Bagi Asesor / Guru)</h2>
+        <p>Tabel ini digunakan untuk mengukur objektivitas hasil kerja siswa dalam menyusun proposal dan mempresentasikan penawaran bisnis jaringan.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspek Penilaian</th>
+                    <th>Skor 4 (Sangat Baik / 86-100)</th>
+                    <th>Skor 3 (Baik / 76-85)</th>
+                    <th>Skor 2 (Cukup / 65-75)</th>
+                    <th>Skor 1 (Kurang / &lt;65)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1. Pemahaman Kasus & Solusi Teknis</strong></td>
+                    <td>Solusi sangat tepat dan detail. Menjawab 3 masalah Pak Budi sekaligus (Penambahan AP untuk lantai 2, Setting Bandwidth MikroTik, dan Manajemen Pipa Kabel/Trunking).</td>
+                    <td>Solusi cukup tepat, namun hanya mampu memberikan jalan keluar logis untuk 2 dari 3 permasalahan Kopi Senja.</td>
+                    <td>Solusi terlalu umum atau hanya sebatas teori dasar jaringan tanpa penyesuaian dengan kondisi kafe.</td>
+                    <td>Tidak memahami inti masalah; solusi yang ditawarkan salah secara teknis atau tidak masuk akal (misal menyuruh klien mengganti ISP).</td>
+                </tr>
+                <tr>
+                    <td><strong>2. Kualitas Analisis SWOT</strong></td>
+                    <td>Analisis sangat tajam, realistis dengan kondisi siswa/vendor pemula, dan ada keterkaitan strategis antar faktor (misal: menggunakan kekuatan untuk mengatasi ancaman).</td>
+                    <td>Analisis baik, namun ada beberapa poin yang kurang spesifik atau tertukar antara faktor internal dan eksternal.</td>
+                    <td>Analisis terlalu dangkal (contoh: "kekuatan: rajin bekerja") dan kurang mencerminkan ekosistem bisnis IT.</td>
+                    <td>Analisis SWOT tidak lengkap, dikosongkan, atau menyalin sepenuhnya dari internet tanpa penyesuaian.</td>
+                </tr>
+                <tr>
+                    <td><strong>3. Rencana Anggaran Biaya (RAB)</strong></td>
+                    <td>Rincian alat material sangat logis, harga survei sesuai pasaran, perhitungan rumus matematika akurat, dan proyeksi margin laba tercantum jelas.</td>
+                    <td>Rincian alat lengkap dan rumus benar, namun perkiraan harga jasa atau material terlalu jauh/tidak masuk akal dari standar harga pasar riil.</td>
+                    <td>Rincian material kurang lengkap (ada perangkat vital yang lupa dianggarkan sehingga berisiko rugi), perhitungan format kurang rapi.</td>
+                    <td>RAB tidak logis, tebak-tebakan asal, perhitungan salah total, atau tidak mencantumkan estimasi harga barang sama sekali.</td>
+                </tr>
+                <tr>
+                    <td><strong>4. Struktur, Ejaan & Tata Bahasa</strong></td>
+                    <td>Format sangat rapi, urutan sesuai template standar B2B, tata bahasa baku dan profesional, bebas dari kesalahan ketik (typo).</td>
+                    <td>Format rapi, namun ditemukan beberapa kesalahan ketik minor atau pemilihan kata yang kurang pas dalam konteks bisnis formal.</td>
+                    <td>Format acak-acakan, mengabaikan template, bahasa cenderung terlalu santai/bahasa gaul.</td>
+                    <td>Proposal sangat tidak rapi, sulit dibaca alurnya, dan penuh dengan kesalahan ejaan parah.</td>
+                </tr>
+                <tr>
+                    <td><strong>5. Portofolio & Pitching (Presentasi)</strong></td>
+                    <td>Presentasi sangat meyakinkan (tidak membaca teks), melampirkan ide portofolio digital riil (foto kabel rapi/sosmed), kontak call-to-action jelas. Mampu menjawab pertanyaan menjebak klien.</td>
+                    <td>Presentasi lancar namun masih sering melihat slide/teks. Mencantumkan ide portofolio tapi kurang dideskripsikan dengan menarik.</td>
+                    <td>Presentasi gugup, kurang menguasai solusi teknis, dan hanya menyebutkan nama sosmed tanpa bukti karya (portofolio) sama sekali.</td>
+                    <td>Tidak mencantumkan konsep portofolio digital, kontak bisnis nihil, atau menolak melakukan presentasi di depan kelas.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="info-box">
+            <strong>Cara Penghitungan Nilai Akhir Skala 100:</strong><br>
+            Nilai Akhir = (Total Skor yang Diperoleh / 20) x 100<br>
+            <em>Contoh: Jika kelompok siswa mendapat skor: Aspek 1 (4), Aspek 2 (3), Aspek 3 (4), Aspek 4 (4), Aspek 5 (3). Total = 18.<br>Maka Nilai Akhir: (18 / 20) x 100 = <strong>90 (Sangat Baik)</strong></em>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB V: Panduan Pembuatan Pitch Deck (Slide Presentasi)</h2>
+        <p>Mempresentasikan proposal dengan slide PowerPoint/Canva yang padat dan memukau adalah keahlian utama *technopreneur*. Jangan penuhi slide dengan teks panjang. Gunakan panduan 8 slide maksimal berikut ini:</p>
+        
+        <ul>
+            <li><strong>Slide 1: Pembukaan (The Hook)</strong>
+                <br><em>Visual:</em> Logo usaha siswa (misal: NetPro) dan foto ilustrasi jaringan estetis.
+                <br><em>Teks:</em> Solusi Jaringan Cerdas untuk Kopi Senja. Oleh: Tim NetPro.
+                <br><em>Catatan Presenter:</em> "Selamat pagi Pak Budi. Kami hadir hari ini untuk membantu Kopi Senja memberikan pengalaman berinternet terbaik bagi pelanggan VIP Bapak."
+            </li>
+            <li><strong>Slide 2: Identifikasi Masalah (The Pain)</strong>
+                <br><em>Visual:</em> Ikon WiFi silang merah, ikon siput, foto kabel kusut.
+                <br><em>Teks:</em> 1. Blank Spot Lantai 2. | 2. Tarikan Bandwidth Bocor. | 3. Kabel Kasir Berbahaya.
+            </li>
+            <li><strong>Slide 3: Solusi yang Ditawarkan (The Cure)</strong>
+                <br><em>Visual:</em> Ikon Access Point, MikroTik Router, Pipa Pelindung Kabel.
+                <br><em>Teks:</em> 1. Ekspansi AP UniFi. | 2. Manajemen Bandwidth Adil via MikroTik. | 3. Cable Management PVC.
+            </li>
+            <li><strong>Slide 4: Nilai Tambah (Value Proposition)</strong>
+                <br><em>Visual:</em> Foto tim berseragam kerja/sertifikat.
+                <br><em>Teks:</em> Mengapa Memilih NetPro? Teknisi SMK tersertifikasi, Pengerjaan di luar jam sibuk kafe, Garansi 14 Hari.
+            </li>
+            <li><strong>Slide 5: Skema Topologi & Rencana Kerja</strong>
+                <br><em>Visual:</em> Gambar alur topologi (ISP → MikroTik Utama → Switch → AP1 & AP2).
+                <br><em>Teks:</em> Waktu Pengerjaan: 2 Hari Kerja. Hari 1: Tarik Kabel. Hari 2: Setting & Testing.
+            </li>
+            <li><strong>Slide 6: Rencana Investasi (RAB Ringkas)</strong>
+                <br><em>Visual:</em> Diagram pie atau angka besar yang jelas.
+                <br><em>Teks:</em> Total Investasi Material: Rp [X] | Total Jasa Instalasi: Rp [Y] | Grand Total: Rp [Z].
+            </li>
+            <li><strong>Slide 7: Portofolio & Call to Action</strong>
+                <br><em>Visual:</em> Foto Before-After pekerjaan kabel dari lab sekolah & QR Code Sosmed.
+                <br><em>Teks:</em> Hubungi WA: 0812-XXXX-XXXX | Instagram: @NetPro.IT
+            </li>
+            <li><strong>Slide 8: Penutup & QnA</strong>
+                <br><em>Teks:</em> Terima Kasih. Mari berdiskusi, Pak Budi.
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB VI: Teori Lanjutan Penyusunan Anggaran (RAB)</h2>
+        <p>Kesalahan terbesar wirausahawan teknisi pemula adalah salah menghitung modal, sehingga mereka capek bekerja tapi secara finansial "nombok" (rugi). Pahami 3 komponen dasar biaya proyek ini:</p>
+        
+        <ol>
+            <li><strong>Modal Kerja (Aset Tetap Perusahaan):</strong> Ini adalah alat fundamental milik vendor yang dibeli sekali untuk dipakai bertahun-tahun (Tang Crimping, LAN Tester, Bor Listrik, Tangga). Biaya alat ini <strong>TIDAK BOLEH</strong> dibebankan sepenuhnya ke dalam RAB satu klien.</li>
+            <li><strong>Biaya Material (HPP / Harga Pokok Penjualan):</strong> Barang yang sifatnya habis pakai, dibeli, dipasang, dan ditinggalkan secara permanen di tempat klien. (Kabel UTP per meter, Konektor RJ45, Switch Hub, Pipa PVC). Ini adalah inti dari RAB pengadaan.</li>
+            <li><strong>Biaya Operasional & Jasa:</strong> Ongkos yang keluar selama proyek berjalan. Meliputi bensin survei, uang makan teknisi, dan nilai keahlian (jasa tarik kabel per titik, jasa setting mikrotik).</li>
+        </ol>
+        
+        <p><strong>Formula Menentukan Harga Jual (Pricing Strategy):</strong><br>
+        Jangan pernah asal banting harga. Gunakan rumus baku ini:<br>
+        <span class="highlight">Harga Penawaran Akhir = Total Modal Material (HPP) + Total Biaya Jasa/Operasional + Margin Keuntungan Perusahaan (Contoh: 30%)</span></p>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB VII: Praktik Lab Komputer - Simulasi RAB Excel Otomatis</h2>
+        <p>Seorang Technopreneur wajib menguasai spreadsheet. Dengan RAB otomatis, jika klien menawar harga jasa, sistem akan menghitung ulang sisa laba bersih secara seketika tanpa perlu kalkulator manual.</p>
+        
+        <h3>Instruksi Pembuatan di Microsoft Excel / Google Sheets:</h3>
+        <ol>
+            <li>Buka lembar kerja kosong. Buat header tabel sesuai kolom di bawah ini dari Kolom A hingga Kolom F.</li>
+            <li>Ketikkan Data Mentah pada baris 4 sampai 10. (Ketik angka tanpa titik, format titik mata uang diatur nanti via fitur <em>Format Cells > Currency > Rp</em>).</li>
+            <li><strong>Input Rumus Perkalian (Total Harga Pokok):</strong> Klik Sel F4, ketik rumus <span class="excel-code">=C4*E4</span> lalu tekan Enter. Klik tahan pojok kanan bawah Sel F4, lalu seret (drag) sampai ke Sel F10 agar rumus tersalin ke bawah otomatis.</li>
+            <li><strong>Input Rumus Sub-Total HPP:</strong> Klik Sel F12, ketik rumus penjumlahan rentang <span class="excel-code">=SUM(F4:F10)</span>.</li>
+            <li><strong>Input Rumus Margin Laba (30%):</strong> Klik Sel F13, ketik rumus <span class="excel-code">=F12*30%</span>.</li>
+            <li><strong>Input Rumus Total Penawaran Akhir:</strong> Klik Sel F14, ketik rumus pertambahan <span class="excel-code">=F12+F13</span>. Ini adalah harga akhir yang disodorkan ke klien.</li>
+        </ol>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Kolom A<br>(No)</th>
+                    <th>Kolom B<br>(Deskripsi Barang / Jasa)</th>
+                    <th>Kolom C<br>(Qty)</th>
+                    <th>Kolom D<br>(Satuan)</th>
+                    <th>Kolom E<br>(Harga Satuan - Rp)</th>
+                    <th>Kolom F<br>(Total Harga Pokok - Rumus)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Kabel UTP Cat6 (Belden Original)</td><td>1</td><td>Roll</td><td>1.500.000</td><td><em>=C4*E4</em> (Hasil: 1.500.000)</td></tr>
+                <tr><td>2</td><td>Konektor RJ45 Cat6</td><td>50</td><td>Pcs</td><td>3.000</td><td><em>=C5*E5</em> (Hasil: 150.000)</td></tr>
+                <tr><td>3</td><td>Switch Hub 16 Port Gigabit (TP-Link)</td><td>1</td><td>Unit</td><td>850.000</td><td><em>=C6*E6</em> (Hasil: 850.000)</td></tr>
+                <tr><td>4</td><td>Router MikroTik RB750Gr3</td><td>1</td><td>Unit</td><td>950.000</td><td><em>=C7*E7</em> (Hasil: 950.000)</td></tr>
+                <tr><td>5</td><td>Pipa Pelindung Kabel (Trunking PVC)</td><td>10</td><td>Batang</td><td>15.000</td><td><em>=C8*E8</em> (Hasil: 150.000)</td></tr>
+                <tr><td>6</td><td>Jasa Tarik & Rapikan Kabel</td><td>10</td><td>Titik</td><td>50.000</td><td><em>=C9*E9</em> (Hasil: 500.000)</td></tr>
+                <tr><td>7</td><td>Jasa Setting & Keamanan MikroTik</td><td>1</td><td>Paket</td><td>400.000</td><td><em>=C10*E10</em> (Hasil: 400.000)</td></tr>
+                <tr style="font-weight:bold;">
+                    <td colspan="5" style="text-align:right;">SUB-TOTAL MODAL & JASA (HPP) - Sel F12</td>
+                    <td><em>=SUM(F4:F10)</em><br>(Total HPP: 4.500.000)</td>
+                </tr>
+                <tr style="font-weight:bold; color: #27ae60;">
+                    <td colspan="5" style="text-align:right;">MARGIN KEUNTUNGAN BISNIS (30%) - Sel F13</td>
+                    <td><em>=F12*30%</em><br>(Total Laba: 1.350.000)</td>
+                </tr>
+                <tr style="font-weight:bold; background-color: #2980b9; color: white;">
+                    <td colspan="5" style="text-align:right;">TOTAL HARGA PENAWARAN KLIEN - Sel F14</td>
+                    <td><em>=F12+F13</em><br>(Total Akhir: 5.850.000)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><em>Penjelasan Edukatif untuk Siswa: Dari total uang Rp 5.850.000 yang dibayar klien, Rp 4.500.000 habis dibelanjakan untuk material dan upah lelah fisik kalian. Sisa Rp 1.350.000 adalah murni keuntungan kas perusahaan yang ditabung untuk membesarkan bisnis.</em></p>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB VIII: Skenario Simulasi Negosiasi (Role-Play)</h2>
+        <p>Bagian ini sangat krusial. Seringkali siswa yang pintar teknis justru "kalah mental" saat klien menawar harga. Latih mental mereka dengan mempraktikkan dialog metode <strong>"Value-Based Selling"</strong> (Menjual Berdasarkan Nilai, Bukan Banting Harga) berikut ini di depan kelas.</p>
+        
+        <div class="dialogue-box">
+            <p><strong>Konteks:</strong> Siswa (Vendor) baru saja memberikan dokumen RAB final senilai Rp 5.850.000 kepada Pak Budi. Pak Budi merasa mahal dan mulai membandingkan harga.</p>
+
+            <span class="dialogue-speaker">Pak Budi (Klien):</span> <span class="dialogue-action">(Melihat dokumen RAB dengan dahi berkerut)</span><br>"Wah, Mas... Totalnya sampai Rp 5,8 juta ya? Ini kemahalan buat kafe saya yang baru buka sebulan. Kemarin ada anak freelance dari luar nawarin jasa setting dan narik kabel cuma Rp 3,5 juta lho, udah terima beres jalan semuanya."<br>
+            
+            <span class="dialogue-speaker">Siswa (Vendor IT):</span> <span class="dialogue-action">(Menatap mata klien, tersenyum tenang, mengatur napas agar tidak panik)</span><br>"Terima kasih sudah mereview RAB kami dengan teliti, Pak Budi. Sangat wajar kalau Bapak merasa Rp 5,8 juta itu besar di awal. Tapi kalau Bapak perhatikan rinci di tabel, <strong>hampir Rp 3,5 juta dari biaya itu murni untuk belanja alat fisik berkualitas enterprise</strong> seperti Kabel Belden asli dan MikroTik kapasitas besar. Itu semua akan jadi aset inventaris kafe Bapak yang sangat awet."<br>
+
+            <span class="dialogue-speaker">Pak Budi:</span><br>"Iya sih, tapi masa bedanya sampai 2 juta lebih sama anak freelance kemarin?"<br>
+
+            <span class="dialogue-speaker">Siswa:</span><br>"Itu yang jadi poin penting, Pak. Banyak pihak menawarkan harga sangat murah karena mereka merakit pakai kabel kualitas rendah (campuran aluminium) yang dalam setahun pasti sudah getas, atau pakai router murahan kelas rumahan. Kalau dipakai nampung 50 pelanggan kafe sekaligus, pasti langsung down. Kami mendesain jaringan ini khusus untuk kelas bisnis agar Bapak tidak pernah lagi pusing dikomplain pelanggan VIP soal internet."<br>
+
+            <span class="dialogue-speaker">Pak Budi:</span> <span class="dialogue-action">(Mulai mengangguk paham)</span><br>"Oke, saya paham alat kalian memang bagus. Tapi ya jangan 5,8 juta lah mas. Kasih diskon potong harga dong! Kita pasin aja ya jadi Rp 4.500.000? Kan sekalian bantu UMKM lokal."<br>
+
+            <span class="dialogue-speaker">Siswa:</span> <span class="dialogue-action">(Berpikir sejenak. Jika disetujui Rp 4.5 juta, laba bersih vendor hilang sama sekali alias kerja bakti. Lakukan Taktik Tukar Spesifikasi/Trade-off).</span><br>"Begini Pak Budi, kalau budget maksimal Bapak memang mentok di Rp 4,5 juta, kami bisa saja sesuaikan. <strong>Tapi konsekuensinya, spesifikasi ketahanan harus diturunkan.</strong> Kabel LAN kita ganti dengan merek standar, dan kabelnya tidak usah kita pakaikan pipa pelindung PVC. Jadi kabelnya cukup di paku nempel dinding saja. Bagaimana?"<br>
+
+            <span class="dialogue-speaker">Pak Budi:</span> <span class="dialogue-action">(Menolak penurunan kualitas)</span><br>"Waduh, jangan dong. Nanti kabelnya digigit tikus atau ditarik anak kecil malah bahaya banget. Saya maunya rapi dan aman kayak di foto contoh kerjamu tadi."<br>
+
+            <span class="dialogue-speaker">Siswa:</span> <span class="dialogue-action">(Taktik Win-Win: Berikan diskon jasa/waktu, jangan diskon uang/material).</span><br>"Nah, karena Bapak butuh kualitas jaringan yang paling aman dan awet, harga Rp 5,8 juta ini sudah perhitungan paling efisien, Pak. Tapi, sebagai bentuk support khusus dari kami untuk Kopi Senja, saya tidak akan memotong harga, melainkan <strong>saya berikan bonus layanan premium secara cuma-cuma.</strong> Saya berikan Bapak <strong>Gratis Jasa Maintenance & Prioritas Panggilan selama 1 Bulan Pertama</strong> (senilai Rp 300.000). Jadi kalau malam minggu kafe lagi ramai dan internet ISP bermasalah, tim kami akan datang melakukan perbaikan tanpa biaya transport sedikitpun. Bapak cukup tenang fokus jualan kopi."<br>
+
+            <span class="dialogue-speaker">Pak Budi:</span> <span class="dialogue-action">(Wajahnya cerah, merasa dimenangkan dan mendapat keamanan garansi).</span><br>"Wah, dapat gratis full maintenance sebulan ya? Begitu ada apa-apa langsung ditangani cepat? Oke deh kalau ada garansinya saya merasa aman. Setuju di angka Rp 5.850.000. Kapan bisa mulai dikerjakan?"<br>
+
+            <span class="dialogue-speaker">Siswa:</span><br>"Terima kasih atas kepercayaannya. Prosedurnya, setelah Bapak membayarkan Down Payment (DP) 50% hari ini ke rekening perusahaan kami untuk belanja alat, besok pagi jam 8 tim kami langsung meluncur ke lokasi untuk penarikan kabel."
+        </div>
+
+        <div class="info-box">
+            <strong>Poin Debriefing (Evaluasi Pasca Role-Play):</strong>
+            <ul>
+                <li><strong>Jangan Panik Saat Dibandingkan:</strong> Klien memang selalu menawar. Tugas wirausaha adalah menjelaskan <em>"Kenapa harga kita wajar"</em>.</li>
+                <li><strong>Jangan Cepat Memotong Harga:</strong> Memotong harga sama dengan memotong uang jajan/gaji teknisi Anda sendiri.</li>
+                <li><strong>Taktik Trade-Off:</strong> Jika klien memaksa harga turun drastis, maka KUALITAS BARANG juga wajib diturunkan. Jangan beri barang bintang 5 dengan harga bintang 2.</li>
+                <li><strong>Diskon Waktu > Diskon Uang:</strong> Memberikan bonus "gratis maintenance" hanya memakan modal waktu tenaga Anda, tetapi di mata klien nilainya sangat berharga dan menenangkan hati mereka.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <h2>BAB IX: Dokumen Legalitas - Surat Perjanjian Kerja (SPK)</h2>
+        <p>Tahap pamungkas yang sangat vital. Banyak teknisi menangis karena klien lari tidak membayar atau klien terus menerus minta tambah pekerjaan di luar kesepakatan (Scope Creep). Bekali siswa dengan SPK formal namun sederhana berikut ini.</p>
+
+        <div class="spk-container">
+            <div class="spk-title">SURAT PERJANJIAN KERJA (SPK)</div>
+            <div class="spk-subtitle">LAYANAN PENGADAAN & INSTALASI JARINGAN IT<br>Nomor: 001/SPK/NETPRO/X/2026</div>
+
+            <p>Pada hari ini, <strong><span class="template-placeholder">[Hari]</span></strong> tanggal <strong><span class="template-placeholder">[Tanggal Lengkap]</span></strong>, bertempat di <strong><span class="template-placeholder">[Nama Kota]</span></strong>, yang bertanda tangan di bawah ini:</p>
+            
+            <p><strong>1. DATA PIHAK PERTAMA (KLIEN)</strong><br>
+            Nama Lengkap: <span class="template-placeholder">[Nama Penanggung Jawab Klien]</span><br>
+            Jabatan: <span class="template-placeholder">[Pemilik / Manajer Operasional]</span><br>
+            Nama Usaha/Instansi: <span class="template-placeholder">[Contoh: Kopi Senja]</span><br>
+            Alamat Lengkap: <span class="template-placeholder">[Alamat Lokasi Proyek]</span><br>
+            No. Telp / WA: <span class="template-placeholder">[Nomor HP Aktif]</span><br>
+            Dalam hal ini bertindak untuk dan atas nama entitas bisnis tersebut di atas, selanjutnya dalam perjanjian ini disebut sebagai <strong>PIHAK PERTAMA</strong>.</p>
+
+            <p><strong>2. DATA PIHAK KEDUA (VENDOR IT)</strong><br>
+            Nama Lengkap: <span class="template-placeholder">[Nama Siswa / Ketua Tim IT]</span><br>
+            Jabatan: <span class="template-placeholder">[Project Manager / Pimpinan Usaha]</span><br>
+            Nama Usaha (Vendor): <span class="template-placeholder">[Contoh: NetPro Solutions]</span><br>
+            Alamat Lengkap: <span class="template-placeholder">[Alamat Bengkel Kerja/Sekolah Siswa]</span><br>
+            No. Telp / WA: <span class="template-placeholder">[Nomor HP Aktif]</span><br>
+            Dalam hal ini bertindak untuk dan atas nama entitas penyedia jasa IT tersebut di atas, selanjutnya dalam perjanjian ini disebut sebagai <strong>PIHAK KEDUA</strong>.</p>
+
+            <p>Kedua belah pihak secara sadar dan tanpa paksaan sepakat untuk mengikatkan diri dalam Surat Perjanjian Kerja (SPK) dengan ketentuan dan syarat-syarat tertulis sebagai berikut:</p>
+
+            <p><strong>PASAL 1: RUANG LINGKUP PEKERJAAN</strong><br>
+            PIHAK PERTAMA memberikan tugas, dan PIHAK KEDUA menerima tugas tersebut untuk melaksanakan proyek pengadaan alat dan instalasi jaringan komputer dengan spesifikasi utama meliputi: Penarikan kabel LAN terlindung, pemasangan Access Point tambahan, dan konfigurasi keamanan MikroTik.<br>
+            <em>(Rincian spesifikasi merek barang, jumlah titik, dan area pengerjaan secara mengikat merujuk pada Dokumen Proposal dan RAB yang dilampirkan bersama surat ini).</em></p>
+
+            <p><strong>PASAL 2: JANGKA WAKTU PELAKSANAAN</strong><br>
+            1. Pekerjaan akan dimulai secara efektif pada tanggal: <strong><span class="template-placeholder">[Tanggal Mulai]</span></strong>.<br>
+            2. Pekerjaan ditargetkan selesai sepenuhnya (Handover) pada tanggal: <strong><span class="template-placeholder">[Tanggal Selesai]</span></strong>.</p>
+
+            <p><strong>PASAL 3: NILAI KONTRAK & SISTEM PEMBAYARAN TERKONTROL</strong><br>
+            1. Total nilai investasi proyek yang disepakati mutlak oleh kedua belah pihak adalah sebesar <strong>Rp <span class="template-placeholder">[Nominal Angka, misal 5.850.000]</span>,- (<span class="template-placeholder">[Nominal Huruf, misal: Lima Juta Delapan Ratus Lima Puluh Ribu Rupiah]</span>)</strong>.<br>
+            2. Pembayaran disepakati menggunakan sistem termin dengan rincian mutlak sebagai berikut:<br>
+               &nbsp;&nbsp;&nbsp;a. <strong>Termin I (Down Payment / Uang Muka 50%):</strong> Sebesar <strong>Rp <span class="template-placeholder">[Nominal 50%]</span>,-</strong> dibayarkan pada saat penandatanganan kontrak ini untuk alokasi pengadaan material keras.<br>
+               &nbsp;&nbsp;&nbsp;b. <strong>Termin II (Pelunasan Akhir 50%):</strong> Sebesar <strong>Rp <span class="template-placeholder">[Nominal 50%]</span>,-</strong> dibayarkan maksimal 1x24 jam setelah seluruh pekerjaan dinyatakan selesai, lulus uji coba (testing), dan diserahterimakan operasionalnya.<br>
+            3. Seluruh pembayaran hanya dianggap sah apabila ditransfer secara elektronik ke rekening bank PIHAK KEDUA: Bank <strong><span class="template-placeholder">[Nama Bank]</span></strong>, Rekening: <strong><span class="template-placeholder">[Nomor Rekening]</span></strong> a.n <strong><span class="template-placeholder">[Nama Pemilik Rekening Valid]</span></strong>.</p>
+
+            <p><strong>PASAL 4: KLAUSUL GARANSI & PEMELIHARAAN</strong><br>
+            1. PIHAK KEDUA memberikan komitmen layanan Garansi Pekerjaan Fisik dan Bantuan Perbaikan (Maintenance) secara GRATIS selama <strong>30 (tiga puluh) hari kalender</strong> terhitung secara sah sejak tanggal serah terima pekerjaan.<br>
+            2. Garansi batal/tidak berlaku apabila kerusakan sistem diakibatkan oleh: Kelalaian/sabotase staf PIHAK PERTAMA, Bencana alam (Force Majeure seperti petir/banjir), lonjakan arus listrik (konsleting gedung), atau murni gangguan koneksi dari pihak pusat (Internet Service Provider / ISP lokal).</p>
+
+            <p><strong>PASAL 5: PENUTUP & PENGESAHAN</strong><br>
+            Demikian Surat Perjanjian Kerja (SPK) ini dibuat dengan itikad baik dalam rangkap 2 (dua) asli, masing-masing dibubuhi meterai secukupnya, ditandatangani oleh kedua belah pihak, dan mempunyai kekuatan hukum pembuktian yang sama eratnya.</p>
+
+            <table class="signature-table">
+                <tr>
+                    <td>
+                        <strong>PIHAK PERTAMA (KLIEN)</strong><br>
+                        <em>(Meterai Tempel Rp 10.000 & Tanda Tangan)</em><br><br><br><br><br>
+                        <strong>[ .......................................... ]</strong><br>
+                        <span style="font-size: 0.9em;">Nama Terang & Stempel Usaha</span>
+                    </td>
+                    <td>
+                        <strong>PIHAK KEDUA (VENDOR IT)</strong><br>
+                        <em>(Tanda Tangan)</em><br><br><br><br><br>
+                        <strong>[ .......................................... ]</strong><br>
+                        <span style="font-size: 0.9em;">Nama Terang (Siswa / PM)</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="info-box">
+            <strong>Catatan Edukasi Hukum untuk Siswa:</strong>
+            <ul>
+                <li><strong>Kekuatan Meterai:</strong> Tanda tangan klien yang menimpa meterai asli memberikan kekuatan alat bukti perdata di mata hukum Indonesia. Jika suatu saat klien menolak melunasi pembayaran sisa 50%, dokumen ini adalah tameng Anda.</li>
+                <li><strong>Anti Scope-Creep (Kerja Tambahan Gratis):</strong> Selalu print tabel RAB dari Excel dan staples di halaman belakang SPK ini. Jika di tengah jalan klien berkata <em>"Mas sekalian tarik 1 kabel lagi ke dapur gratis ya?"</em>, Anda bisa dengan sopan menunjuk kontrak: <em>"Mohon maaf Pak, tarikan ke dapur tidak ada di lampiran SPK awal. Kalau mau ditambahkan, akan ada biaya tambahan kabel per meternya."</em></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
